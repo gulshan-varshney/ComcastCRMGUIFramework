@@ -22,6 +22,9 @@ public class HomePage {
 		PageFactory.initElements(driver, this);
 	}
 
+	@FindBy(linkText = "Products")
+	private WebElement productLink;
+
 	@FindBy(linkText = "Organizations")
 	private WebElement orgLink;
 
