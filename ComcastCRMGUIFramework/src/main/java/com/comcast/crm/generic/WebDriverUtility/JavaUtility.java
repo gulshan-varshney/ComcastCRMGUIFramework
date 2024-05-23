@@ -5,8 +5,18 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.Random;
 
+/**
+ * 
+ * @author gulshan
+ *
+ */
 public class JavaUtility {
 
+	/**
+	 * this method will generate the random number
+	 * 
+	 * @return
+	 */
 	// method for random number
 	public int getRandomNumber() {
 		Random random = new Random();
@@ -14,6 +24,11 @@ public class JavaUtility {
 		return randomNum;
 	}
 
+	/**
+	 * this method will give the current date in required format
+	 * 
+	 * @return
+	 */
 	// method for current date
 	public String getSystemDate() {
 
@@ -23,6 +38,12 @@ public class JavaUtility {
 		return currentDate;
 	}
 
+	/**
+	 * this method will give the required date
+	 * 
+	 * @param days
+	 * @return
+	 */
 	// Method for required date
 	public String getRequiredDate(int days) {
 

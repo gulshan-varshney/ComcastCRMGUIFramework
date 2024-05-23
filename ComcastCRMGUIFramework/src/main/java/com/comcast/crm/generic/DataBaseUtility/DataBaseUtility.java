@@ -8,11 +8,25 @@ import java.sql.Statement;
 
 import com.mysql.jdbc.Driver;
 
+/**
+ * 
+ * @author gulshan
+ *
+ */
 public class DataBaseUtility {
 
 	Connection conn;
 
-	// method for create connection
+	/**
+	 * this method will perform the mySQL Database connection
+	 * 
+	 * @param url
+	 * @param username
+	 * @param password
+	 * @throws SQLException
+	 */
+
+	/* method for create connection */
 	public void getDbConnection(String url, String username, String password) throws SQLException {
 
 		try {
@@ -33,7 +47,13 @@ public class DataBaseUtility {
 		}
 	}
 
-	// method for close the connection
+	/**
+	 * this method perform the disconnection from database
+	 * 
+	 * @throws SQLException
+	 */
+
+	/* method for close the connection */
 	public void closeConnection() throws SQLException {
 		try {
 			conn.close();
@@ -41,16 +61,30 @@ public class DataBaseUtility {
 		}
 	}
 
+	/**
+	 * this method will perform select query action
+	 * 
+	 * @param query
+	 * @return
+	 * @throws SQLException
+	 */
 	// method for select query
 	public ResultSet executeSelectQuery(String query) throws SQLException {
 		ResultSet result = null;
 		try {
 			Statement stat = conn.createStatement();
 			result = stat.executeQuery(query);
-		} catch (Exception e) {}
+		} catch (Exception e) {
+		}
 		return result;
 	}
 
+	/**
+	 * this method will perform non select query action
+	 * 
+	 * @param query
+	 * @return
+	 */
 	// method for non-select query
 	public int executeNonSelectQuery(String query) {
 		int result = 0;

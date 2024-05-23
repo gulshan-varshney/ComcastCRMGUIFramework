@@ -11,6 +11,11 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 
+/**
+ * 
+ * @author gulshan
+ *
+ */
 public class ExcelUtility {
 
 	public FileInputStream fis;
@@ -18,6 +23,16 @@ public class ExcelUtility {
 	public Sheet sh;
 	public Row row;
 
+	/**
+	 * this method read the data from excel file
+	 * 
+	 * @param sheetName
+	 * @param rowNum
+	 * @param celNum
+	 * @return
+	 * @throws EncryptedDocumentException
+	 * @throws IOException
+	 */
 	public String getDataFromExcelFile(String sheetName, int rowNum, int celNum)
 			throws EncryptedDocumentException, IOException {
 
@@ -28,6 +43,14 @@ public class ExcelUtility {
 		return data;
 	}
 
+	/**
+	 * this method will give the row count
+	 * 
+	 * @param sheetName
+	 * @return
+	 * @throws EncryptedDocumentException
+	 * @throws IOException
+	 */
 	public int getRowCount(String sheetName) throws EncryptedDocumentException, IOException {
 
 		fis = new FileInputStream("./TestData/testScriptData.xlsx");
@@ -37,6 +60,16 @@ public class ExcelUtility {
 		return rowCount;
 	}
 
+	/**
+	 * this method write the data back to the excel
+	 * 
+	 * @param sheetName
+	 * @param rowNum
+	 * @param celNum
+	 * @param data
+	 * @throws EncryptedDocumentException
+	 * @throws IOException
+	 */
 	public void setDataIntoExcel(String sheetName, int rowNum, int celNum, String data)
 			throws EncryptedDocumentException, IOException {
 
@@ -52,6 +85,14 @@ public class ExcelUtility {
 
 	}
 
+	/**
+	 * this method will perform the data provider action
+	 * 
+	 * @param sheetName
+	 * @return
+	 * @throws EncryptedDocumentException
+	 * @throws IOException
+	 */
 	public Object[][] getMultipleDataFromExcel(String sheetName) throws EncryptedDocumentException, IOException {
 
 		fis = new FileInputStream("./TestData/testScriptData.xlsx");
@@ -63,9 +104,9 @@ public class ExcelUtility {
 		System.out.println(cel);
 
 		Object[][] objArr = new Object[row][cel];
-		for (int i = 1; i <=row; i++) {
+		for (int i = 1; i <= row; i++) {
 
-			for (int j = 0; j <cel; j++) {
+			for (int j = 0; j < cel; j++) {
 
 				objArr[i - 1][j] = sh.getRow(i).getCell(j).toString();
 			}
