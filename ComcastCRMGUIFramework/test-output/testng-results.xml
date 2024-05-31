@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+<testng-results ignored="6" total="8" passed="2" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[Report configuration]]>
@@ -11,7 +11,7 @@
       <![CDATA[=====createOrgTest===Start===]]>
     </line>
     <line>
-      <![CDATA[OrgName faceBook_4601 is created==>PASS]]>
+      <![CDATA[OrgName faceBook_407 is created==>PASS]]>
     </line>
     <line>
       <![CDATA[=====createOrgTest===End===]]>
@@ -20,22 +20,34 @@
       <![CDATA[==closing the browser==]]>
     </line>
     <line>
+      <![CDATA[==chrome Browser launching==]]>
+    </line>
+    <line>
+      <![CDATA[=====createContactTest===Start===]]>
+    </line>
+    <line>
+      <![CDATA[contact Gulshan_1259 is created==>PASS]]>
+    </line>
+    <line>
+      <![CDATA[=====createContactTest===End===]]>
+    </line>
+    <line>
+      <![CDATA[==closing the browser==]]>
+    </line>
+    <line>
       <![CDATA[==close DB==]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-05-21T13:11:05Z" name="Default suite" finished-at="2024-05-21T13:19:00Z" duration-ms="474945">
+  <suite started-at="2024-05-31T07:42:33Z" name="Suite" finished-at="2024-05-31T07:43:23Z" duration-ms="50426">
     <groups>
       <group name="smoke">
+        <method signature="CreateContactTest.createContactTest()[pri:0, instance:com.comcast.crm.ContactTest.CreateContactTest@8576fa0]" name="createContactTest" class="com.comcast.crm.ContactTest.CreateContactTest"/>
         <method signature="CreateOrganizationTest.createOrgTest()[pri:0, instance:com.comcast.crm.OrgTest.CreateOrganizationTest@d41f816]" name="createOrgTest" class="com.comcast.crm.OrgTest.CreateOrganizationTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-05-21T13:11:05Z" name="Default test" finished-at="2024-05-21T13:19:00Z" duration-ms="474945">
-      <class name="com.comcast.crm.OrgTest.CreateOrganizationTest">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:com.comcast.crm.OrgTest.CreateOrganizationTest@d41f816]" started-at="2024-05-21T13:09:40Z" name="configBS" finished-at="2024-05-21T13:10:21Z" duration-ms="41524" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBS -->
-        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:com.comcast.crm.OrgTest.CreateOrganizationTest@d41f816]" started-at="2024-05-21T13:11:05Z" name="configBC" finished-at="2024-05-21T13:15:16Z" duration-ms="250588" status="PASS">
+    <test started-at="2024-05-31T07:42:33Z" name="Test" finished-at="2024-05-31T07:43:23Z" duration-ms="50426">
+      <class name="com.comcast.crm.ContactTest.CreateContactTest">
+        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:com.comcast.crm.ContactTest.CreateContactTest@8576fa0]" started-at="2024-05-31T07:43:12Z" name="configBC" finished-at="2024-05-31T07:43:13Z" duration-ms="1091" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,35 +61,83 @@
             </line>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.crm.OrgTest.CreateOrganizationTest@d41f816]" started-at="2024-05-21T13:15:16Z" name="configBM" finished-at="2024-05-21T13:16:12Z" duration-ms="56100" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.crm.ContactTest.CreateContactTest@8576fa0]" started-at="2024-05-31T07:43:13Z" name="configBM" finished-at="2024-05-31T07:43:15Z" duration-ms="2398" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="createOrgTest()[pri:0, instance:com.comcast.crm.OrgTest.CreateOrganizationTest@d41f816]" started-at="2024-05-21T13:16:12Z" name="createOrgTest" finished-at="2024-05-21T13:18:10Z" duration-ms="117851" status="PASS">
+        <test-method signature="createContactTest()[pri:0, instance:com.comcast.crm.ContactTest.CreateContactTest@8576fa0]" started-at="2024-05-31T07:43:15Z" name="createContactTest" finished-at="2024-05-31T07:43:22Z" duration-ms="6719" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[=====createOrgTest===Start===]]>
+              <![CDATA[=====createContactTest===Start===]]>
             </line>
             <line>
-              <![CDATA[OrgName faceBook_4601 is created==>PASS]]>
+              <![CDATA[contact Gulshan_1259 is created==>PASS]]>
             </line>
             <line>
-              <![CDATA[=====createOrgTest===End===]]>
+              <![CDATA[=====createContactTest===End===]]>
             </line>
           </reporter-output>
-        </test-method> <!-- createOrgTest -->
-        <test-method is-config="true" signature="comfigAM()[pri:0, instance:com.comcast.crm.OrgTest.CreateOrganizationTest@d41f816]" started-at="2024-05-21T13:18:10Z" name="comfigAM" finished-at="2024-05-21T13:18:56Z" duration-ms="46198" status="PASS">
+        </test-method> <!-- createContactTest -->
+        <test-method is-config="true" signature="comfigAM()[pri:0, instance:com.comcast.crm.ContactTest.CreateContactTest@8576fa0]" started-at="2024-05-31T07:43:22Z" name="comfigAM" finished-at="2024-05-31T07:43:23Z" duration-ms="1009" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- comfigAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.crm.OrgTest.CreateOrganizationTest@d41f816]" started-at="2024-05-21T13:18:56Z" name="configAC" finished-at="2024-05-21T13:19:00Z" duration-ms="3749" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.crm.ContactTest.CreateContactTest@8576fa0]" started-at="2024-05-31T07:43:23Z" name="configAC" finished-at="2024-05-31T07:43:23Z" duration-ms="212" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[==closing the browser==]]>
             </line>
           </reporter-output>
         </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:com.comcast.crm.OrgTest.CreateOrganizationTest@d41f816]" started-at="2024-05-21T13:19:00Z" name="configAS" finished-at="2024-05-21T13:19:07Z" duration-ms="6570" status="PASS">
+      </class> <!-- com.comcast.crm.ContactTest.CreateContactTest -->
+      <class name="com.comcast.crm.OrgTest.CreateOrganizationTest">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:com.comcast.crm.OrgTest.CreateOrganizationTest@d41f816]" started-at="2024-05-31T07:42:33Z" name="configBS" finished-at="2024-05-31T07:42:33Z" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method is-config="true" signature="configBC(java.lang.String)[pri:0, instance:com.comcast.crm.OrgTest.CreateOrganizationTest@d41f816]" started-at="2024-05-31T07:42:33Z" name="configBC" finished-at="2024-05-31T07:42:37Z" duration-ms="4381" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[==chrome Browser launching==]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.comcast.crm.OrgTest.CreateOrganizationTest@d41f816]" started-at="2024-05-31T07:42:37Z" name="configBM" finished-at="2024-05-31T07:42:50Z" duration-ms="12783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createOrgTest()[pri:0, instance:com.comcast.crm.OrgTest.CreateOrganizationTest@d41f816]" started-at="2024-05-31T07:42:50Z" name="createOrgTest" finished-at="2024-05-31T07:43:10Z" duration-ms="20134" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[=====createOrgTest===Start===]]>
+            </line>
+            <line>
+              <![CDATA[OrgName faceBook_407 is created==>PASS]]>
+            </line>
+            <line>
+              <![CDATA[=====createOrgTest===End===]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- createOrgTest -->
+        <test-method is-config="true" signature="comfigAM()[pri:0, instance:com.comcast.crm.OrgTest.CreateOrganizationTest@d41f816]" started-at="2024-05-31T07:43:10Z" name="comfigAM" finished-at="2024-05-31T07:43:12Z" duration-ms="1426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- comfigAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.comcast.crm.OrgTest.CreateOrganizationTest@d41f816]" started-at="2024-05-31T07:43:12Z" name="configAC" finished-at="2024-05-31T07:43:12Z" duration-ms="247" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[==closing the browser==]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.comcast.crm.OrgTest.CreateOrganizationTest@d41f816]" started-at="2024-05-31T07:43:23Z" name="configAS" finished-at="2024-05-31T07:43:23Z" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[==close DB==]]>
@@ -85,6 +145,6 @@
           </reporter-output>
         </test-method> <!-- configAS -->
       </class> <!-- com.comcast.crm.OrgTest.CreateOrganizationTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
