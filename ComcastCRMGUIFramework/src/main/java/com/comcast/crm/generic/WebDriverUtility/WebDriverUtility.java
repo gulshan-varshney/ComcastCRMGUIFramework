@@ -88,6 +88,7 @@ public class WebDriverUtility {
 
 	/**
 	 * method for switching tab based on title
+	 * 
 	 * @param driver
 	 * @param partialTitle
 	 */
@@ -107,7 +108,8 @@ public class WebDriverUtility {
 	}
 
 	/**
-	 *  method for switching frames on index
+	 * method for switching frames on index
+	 * 
 	 * @param driver
 	 * @param index
 	 */
@@ -118,6 +120,7 @@ public class WebDriverUtility {
 
 	/**
 	 * method for switching frame by name/id attribute value
+	 * 
 	 * @param driver
 	 * @param nameId
 	 */
@@ -126,7 +129,8 @@ public class WebDriverUtility {
 	}
 
 	/**
-	 * method for switching frame using webElement 
+	 * method for switching frame using webElement
+	 * 
 	 * @param driver
 	 * @param element
 	 */
@@ -185,7 +189,11 @@ public class WebDriverUtility {
 		performAction(driver).dragAndDrop(source, target).perform();
 	}
 
-	// method for robot class
+	public void scrollToElement(WebDriver driver, WebElement element) {
+		performAction(driver).scrollToElement(element).perform();
+	}
+
+	// methods for robot class
 	public void keyPress(int keycode) throws AWTException {
 		Robot r = new Robot();
 		r.keyPress(keycode);
